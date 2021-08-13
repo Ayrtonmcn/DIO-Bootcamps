@@ -1,8 +1,8 @@
 package EstruturaDeDadosEmJava.ClasseFila;
 
-public class Fila {
+public class Fila<T> {
 
-    private No refNoEntradaFila;
+    private No<T> refNoEntradaFila;
 
     // construtor
     public Fila() {
@@ -10,14 +10,14 @@ public class Fila {
     }
 
     // metodo enqueue
-    public void enqueue(Object obj) {
-        No novoNo = new No(obj);
+    public void enqueue(T object) {
+        No novoNo = new No(object);
         novoNo.setRefNo(refNoEntradaFila);
         refNoEntradaFila = novoNo;
     }
 
     // metodo first - retorna o primeiro da fila, mas o mantém
-    public Object first() {
+    public T first() {
         if (!this.isEmpty()) {
             No primeiroNo = refNoEntradaFila;
             while (true) {
@@ -27,13 +27,13 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo.getObject();
+            return (T) primeiroNo.getObject();
         }
         return null;
     }
 
     // metodo dequeue - aponta o primeio da fila e o retira
-    public Object dequeue() {
+    public T dequeue() {
         if (!this.isEmpty()) {
             No primeiroNo = refNoEntradaFila;
             No noAuxiliar = refNoEntradaFila;
@@ -46,7 +46,7 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo.getObject();
+            return (T) primeiroNo.getObject();
         }
         return null;
     }
