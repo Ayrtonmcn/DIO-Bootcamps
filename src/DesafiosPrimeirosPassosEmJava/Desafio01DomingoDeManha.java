@@ -1,4 +1,4 @@
-package desafiosPrimeirosPassosEmJava;
+package DesafiosPrimeirosPassosEmJava;
 
 /*
  * Domingo é dia de feira. Logo de manhã muitas pessoas se deslocam para o polo de lazer da Parangaba, onde

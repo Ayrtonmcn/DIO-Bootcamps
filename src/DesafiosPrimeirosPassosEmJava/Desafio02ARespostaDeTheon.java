@@ -1,4 +1,4 @@
-package desafiosPrimeirosPassosEmJava;
+package DesafiosPrimeirosPassosEmJava;
 
 /*
  * Ramsay: "(...) você vence se conseguir adivinhar quem eu sou e por que estou torturando você."
