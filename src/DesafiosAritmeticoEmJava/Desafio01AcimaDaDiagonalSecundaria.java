@@ -1,4 +1,4 @@
-package DesafioAritmeticoEmJava;
+package DesafiosAritmeticoEmJava;
 
 /*
 Leia um caractere maiúsculo, que indica uma operação que deve ser realizada e uma matriz M[12][12].
