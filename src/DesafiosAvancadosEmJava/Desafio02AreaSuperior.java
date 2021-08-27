@@ -15,7 +15,7 @@ public class Desafio02AreaSuperior {
         Scanner leitor = new Scanner(System.in);
         double soma = 0;
         char O = leitor.next().toUpperCase().charAt(0);
-        double[][] M = new double[7][7];
+        double[][] M = new double[12][12];
 
         for (int i = 0; i < M.length; ++i) {
             for (int j = 0; j < M.length; ++j) {
